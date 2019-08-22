@@ -34,4 +34,4 @@ class Conta
         int numeroConta;
 };
 
-#endif CONTA_H
+#endif

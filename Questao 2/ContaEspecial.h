@@ -1,13 +1,16 @@
 #ifndef CONTAESPECIAL_H
 #define CONTAESPECIAL_H
 
-class ContaEspecial
+#include "Conta.h"
+#include <iostream>
+
+class ContaEspecial : public Conta
 {
     public:
-        ContaEspecial(/* args */);
+        ContaEspecial();
         ~ContaEspecial();
-    private:
-    
+
+        void DefinirLimite();
 };
 
 #endif
