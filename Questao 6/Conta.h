@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "iConta.h"
+#include "SaldoNaoDisponivelException.h"
 
 class Conta : public iConta
 {
