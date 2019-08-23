@@ -6,6 +6,7 @@ Assalariado::Assalariado(){
     nome = " ";
     matricula = salario = 0;
 }
+
 Assalariado::Assalariado(std::string nome, int matricula, double salario){
     setNome(nome);
     setMatricula(matricula);

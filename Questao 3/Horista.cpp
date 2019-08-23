@@ -37,8 +37,9 @@ double Horista::getSalarioPorHora(){
 }
 
 double Horista::CalcularSalario(){
+
     if(horasTrabalhadas > 40){
-        return (salarioPorHora * 40) + (horasTrabalhadas - 40) * (salarioPorHora * 1,5) * 4; 
+        return ((salarioPorHora * 40) + ((horasTrabalhadas - 40) * (salarioPorHora * 1.5))) * 4; 
     }else{
         return salarioPorHora * horasTrabalhadas * 4;
     }

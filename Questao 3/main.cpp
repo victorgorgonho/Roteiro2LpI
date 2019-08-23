@@ -13,18 +13,18 @@ int main(){
     Funcionario *hor = new Horista();
 
     assl->setNome("Franklin Anthony");
-    assl->setMatricula(123);
+    assl->setMatricula(1);
     ((Assalariado *)assl)->setSalario(1200);
 
     com->setNome("Maria Jose");
-    com->setMatricula(659);
-    ((Comissionado *)com)->setSalarioBase(998);
+    com->setMatricula(2);
+    ((Comissionado *)com)->setSalarioBase(1000);
     ((Comissionado *)com)->setVendasSemanais(500);
     ((Comissionado *)com)->setPercentualComissao(20);
 
     hor->setNome("Jose Antonio");
-    hor->setMatricula(563);
-    ((Horista *)hor)->setSalarioPorHora(50);
+    hor->setMatricula(3);
+    ((Horista *)hor)->setSalarioPorHora(12);
     ((Horista *)hor)->setHorasTrabalhadas(45);
 
     sgf.setFuncionario(assl);
@@ -36,10 +36,10 @@ int main(){
     cout << hor->toString() << endl;
 
     cout << "Total de pagamento na folha: " << sgf.calculaValorTotalFolha() << endl;
-    cout << "Salario funcionario de matricula 659: " << sgf.consultaSalarioFuncionario(659) << endl;
+    cout << "Salario mensal funcionario de matricula 2: " << sgf.consultaSalarioFuncionario(2) << endl;
 
     try{
-        cout << "Salario funcionario de matricula 15451: " << sgf.consultaSalarioFuncionario(15451) << endl;
+        cout << "Salario mensal funcionario de matricula 4: " << sgf.consultaSalarioFuncionario(4) << endl;
     }catch(FuncionarioNaoExisteException e){
         cout << e.what() << endl;
     }
